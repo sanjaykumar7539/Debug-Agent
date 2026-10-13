@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+logs/*
+!logs/README.md
+workspace/*
+!workspace/README.md
+debug_reports/
+.venv/
+__pycache__/
+*.pyc
+logs/*.log

@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Debug Agent Pro report</title>
+<style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:20px;color:#182033}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd3df;padding:10px;text-align:left}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f5f8;padding:20px}
+</style><h1>Debug Agent Pro</h1><p>2026-10-13T15:51:29.249278+00:00</p>
+<h2>Local findings</h2><table><tr><th>Severity</th><th>File</th><th>Line</th><th>Finding</th></tr></table><h2>AI review (offline)</h2><pre>Offline mode: only Python syntax, JSON syntax and selected Python heuristics were checked.</pre><h2>Scope and comparison</h2><pre>{
+  &quot;files&quot;: [
+    &quot;app.py&quot;
+  ],
+  &quot;skipped&quot;: [],
+  &quot;limitations&quot;: &quot;No target execution, runtime testing, dependency audit or exhaustive analysis.&quot;,
+  &quot;comparison&quot;: {
+    &quot;new&quot;: [],
+    &quot;resolved&quot;: [
+      {
+        &quot;file&quot;: &quot;app.py&quot;,
+        &quot;line&quot;: 8,
+        &quot;severity&quot;: &quot;warning&quot;,
+        &quot;message&quot;: &quot;HTTP call has no explicit timeout (check any **kwargs).&quot;,
+        &quot;origin&quot;: &quot;local static check&quot;,
+        &quot;rule&quot;: &quot;LOCAL_710c18807d&quot;,
+        &quot;fingerprint&quot;: &quot;8aee978472551d9c50d3b17f&quot;
+      },
+      {
+        &quot;file&quot;: &quot;app.py&quot;,
+        &quot;line&quot;: 3,
+        &quot;severity&quot;: &quot;warning&quot;,
+        &quot;rule&quot;: &quot;PY_MUTABLE_DEFAULT&quot;,
+        &quot;message&quot;: &quot;Mutable default argument can share state across calls; use None and initialize inside.&quot;,
+        &quot;origin&quot;: &quot;local static check&quot;,
+        &quot;fingerprint&quot;: &quot;e1330eb5bae578c2f80d39ea&quot;
+      },
+      {
+        &quot;file&quot;: &quot;app.py&quot;,
+        &quot;line&quot;: 8,
+        &quot;severity&quot;: &quot;warning&quot;,
+        &quot;rule&quot;: &quot;PY_TLS_DISABLED&quot;,
+        &quot;message&quot;: &quot;TLS certificate verification is disabled.&quot;,
+        &quot;origin&quot;: &quot;local static check&quot;,
+        &quot;fingerprint&quot;: &quot;5d1623dbd9903d059001de4b&quot;
+      },
+      {
+        &quot;file&quot;: &quot;app.py&quot;,
+        &quot;line&quot;: 7,
+        &quot;severity&quot;: &quot;warning&quot;,
+        &quot;rule&quot;: &quot;PY_ASYNC_BLOCKING&quot;,
+        &quot;message&quot;: &quot;A synchronous call inside async code can block the event loop; use an async alternative or a worker.&quot;,
+        &quot;origin&quot;: &quot;local static check&quot;,
+        &quot;fingerprint&quot;: &quot;3fffc01b6a6b812c7a4886c1&quot;
+      },
+      {
+        &quot;file&quot;: &quot;app.py&quot;,
+        &quot;line&quot;: 8,
+        &quot;severity&quot;: &quot;warning&quot;,
+        &quot;rule&quot;: &quot;PY_ASYNC_BLOCKING&quot;,
+        &quot;message&quot;: &quot;A synchronous call inside async code can block the event loop; use an async alternative or a worker.&quot;,
+        &quot;origin&quot;: &quot;local static check&quot;,
+        &quot;fingerprint&quot;: &quot;ea70c343870ac133026224ed&quot;
+      }
+    ],
+    &quot;not_rechecked&quot;: [],
+    &quot;unchanged&quot;: 0
+  }
+}</pre></html>

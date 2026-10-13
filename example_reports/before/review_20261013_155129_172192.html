@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Debug Agent Pro report</title>
+<style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:20px;color:#182033}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd3df;padding:10px;text-align:left}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f5f8;padding:20px}
+</style><h1>Debug Agent Pro</h1><p>2026-10-13T15:51:29.172039+00:00</p>
+<h2>Local findings</h2><table><tr><th>Severity</th><th>File</th><th>Line</th><th>Finding</th></tr><tr><td>warning</td><td>app.py</td><td>8</td><td>HTTP call has no explicit timeout (check any **kwargs).</td></tr><tr><td>warning</td><td>app.py</td><td>3</td><td>Mutable default argument can share state across calls; use None and initialize inside.</td></tr><tr><td>warning</td><td>app.py</td><td>8</td><td>TLS certificate verification is disabled.</td></tr><tr><td>warning</td><td>app.py</td><td>7</td><td>A synchronous call inside async code can block the event loop; use an async alternative or a worker.</td></tr><tr><td>warning</td><td>app.py</td><td>8</td><td>A synchronous call inside async code can block the event loop; use an async alternative or a worker.</td></tr></table><h2>AI review (offline)</h2><pre>Offline mode: only Python syntax, JSON syntax and selected Python heuristics were checked.</pre><h2>Scope and comparison</h2><pre>{
+  &quot;files&quot;: [
+    &quot;app.py&quot;
+  ],
+  &quot;skipped&quot;: [],
+  &quot;limitations&quot;: &quot;No target execution, runtime testing, dependency audit or exhaustive analysis.&quot;
+}</pre></html>

@@ -1,0 +1,65 @@
+{
+  "version": "2.0",
+  "created_at": "2026-10-13T15:51:29.249278+00:00",
+  "ai_status": "offline",
+  "model": null,
+  "files": [
+    "app.py"
+  ],
+  "skipped": [],
+  "local_findings": [],
+  "report": "Offline mode: only Python syntax, JSON syntax and selected Python heuristics were checked.",
+  "limitations": "No target execution, runtime testing, dependency audit or exhaustive analysis.",
+  "comparison": {
+    "new": [],
+    "resolved": [
+      {
+        "file": "app.py",
+        "line": 8,
+        "severity": "warning",
+        "message": "HTTP call has no explicit timeout (check any **kwargs).",
+        "origin": "local static check",
+        "rule": "LOCAL_710c18807d",
+        "fingerprint": "8aee978472551d9c50d3b17f"
+      },
+      {
+        "file": "app.py",
+        "line": 3,
+        "severity": "warning",
+        "rule": "PY_MUTABLE_DEFAULT",
+        "message": "Mutable default argument can share state across calls; use None and initialize inside.",
+        "origin": "local static check",
+        "fingerprint": "e1330eb5bae578c2f80d39ea"
+      },
+      {
+        "file": "app.py",
+        "line": 8,
+        "severity": "warning",
+        "rule": "PY_TLS_DISABLED",
+        "message": "TLS certificate verification is disabled.",
+        "origin": "local static check",
+        "fingerprint": "5d1623dbd9903d059001de4b"
+      },
+      {
+        "file": "app.py",
+        "line": 7,
+        "severity": "warning",
+        "rule": "PY_ASYNC_BLOCKING",
+        "message": "A synchronous call inside async code can block the event loop; use an async alternative or a worker.",
+        "origin": "local static check",
+        "fingerprint": "3fffc01b6a6b812c7a4886c1"
+      },
+      {
+        "file": "app.py",
+        "line": 8,
+        "severity": "warning",
+        "rule": "PY_ASYNC_BLOCKING",
+        "message": "A synchronous call inside async code can block the event loop; use an async alternative or a worker.",
+        "origin": "local static check",
+        "fingerprint": "ea70c343870ac133026224ed"
+      }
+    ],
+    "not_rechecked": [],
+    "unchanged": 0
+  }
+}
